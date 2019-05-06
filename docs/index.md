@@ -6,27 +6,38 @@ editors: "[Steven Capell](mailto:steve.capell@gmail.com)"
 contributors: 
 ---
 
+## Status
+
+![raw](http://rfc.unprotocols.org/spec:2/COSS/raw.svg)
+
 ## Introduction
 
+This specification provides a standard JSON structure/schema for the representation of semantic library content and API models. This is used to
 
+* import library content into any conformant modelling tool, and to
+* interchange API models between conformant modelling tools.
+
+A DSL (domain specific language) approach is preferred here because it will be simpler and more stable than XMI (interchange standard for UML tools) and will allow non-UML based tools to participate equally in the market.
+
+The interchange specification is broken into three parts, each with a dedicated metamodel and each representing models that can be interchanged independently.
+
+* The domain model is essentially the "towm plan" for all UN/CEFACT API resources. 
+* The resource model details the state lifecycle and information model of a specific API resource.
+* the CodeList model represents code list schemes and the flat or hierarchical set of code values.
+
+![metamodel](Metamodel.png)
 
 ## Goals
 
-
-
-## Status
-
-
+This specification will have achieved its purpose when at least two different modelling tools (UML based or otherwise) can successfully interchange any of the three model types.
 
 ## Glossary
 
-Phrase | Definition
------------- | -------------
-|
+|Term | Definition|
+|------------ | -------------|
+| | |
 
-This service depends on - TBA.
 
-The TBA specification depends on this document. Note, TBA.
  
 ## Licence
 
@@ -36,22 +47,21 @@ This Specification is free software; you can redistribute it and/or modify it un
  
 ## Change Process
 
- This document is governed by the [2/COSS](http://rfc.unprotocols.org/spec:2/COSS/) (COSS).
+This document is governed by the [2/COSS](http://rfc.unprotocols.org/spec:2/COSS/) (COSS).
 
 ## Language
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" 
 in this document are to be interpreted as described in RFC 2119.
 
-# Billing Process
+# Domain Model Interchange
 
+Metamodel, JSON schema & sample instance goes here
 
+# Resource Model Interchange
 
-## State Lifecycle
-
-
+Metamodel, JSON schema & sample instance goes here
  
-# Related Material
+# CodeList Interchange
 
- * 
- * 
+Metamodel, JSON schema & sample instance goes here
