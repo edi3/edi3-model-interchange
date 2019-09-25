@@ -46,18 +46,18 @@ The interchange specification is broken into three parts, each with a dedicated 
 * The resource model details the state lifecycle and information model of a specific API resource.
 * the CodeList model represents code list schemes and the flat or hierarchical set of code values.
 
-![metamodel](Metamodel.png)
+![metamodel](overview-metamodel.png)
 
 
 # Town Plan Model Specification
 
 ## Logical Model
 
-![town plan](TownPlanMetaModel.png)
+![town plan](townplan-metamodel.png)
 
 ## JSON Schema
 
-[town plan schema](TownPlanSchema.json)
+[town plan schema](townplan-schema.json)
 
 ## Sample
 
@@ -67,11 +67,11 @@ coming soon
 
 ## Logical Model
 
-![domain model](DomainMetaModel.png)
+![domain model](domain-metamodel.png)
 
 ## JSON Schema
 
-[town plan schema](DomainSchema.json)
+[town plan schema](domain-schema.json)
 
 ## Sample
 
@@ -81,11 +81,11 @@ coming soon
 
 ## Logical Model
 
-![codes model](CodesMetaModel.png)
+![codes model](codes-metamodel.png)
 
 ## JSON Schema
 
-[codes schema](CodesSchema.json)
+[codes schema](codes-schema.json)
 
 ## Sample
 
