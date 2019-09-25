@@ -10,35 +10,6 @@ contributors:
 
 ![raw](http://rfc.unprotocols.org/spec:2/COSS/raw.svg)
 
-## Introduction
-
-This specification provides a standard JSON structure/schema for the representation of semantic library content and API models. This is used to
-
-* import library content into any conformant modelling tool, and to
-* interchange API models between conformant modelling tools.
-
-A DSL (domain specific language) approach is preferred here because it will be simpler and more stable than XMI (interchange standard for UML tools) and will allow non-UML based tools to participate equally in the market.
-
-The interchange specification is broken into three parts, each with a dedicated metamodel and each representing models that can be interchanged independently.
-
-* The domain model is essentially the "towm plan" for all UN/CEFACT API resources. 
-* The resource model details the state lifecycle and information model of a specific API resource.
-* the CodeList model represents code list schemes and the flat or hierarchical set of code values.
-
-![metamodel](Metamodel.png)
-
-## Goals
-
-This specification will have achieved its purpose when at least two different modelling tools (UML based or otherwise) can successfully interchange any of the three model types.
-
-## Glossary
-
-|Term | Definition|
-|------------ | -------------|
-| | |
-
-
- 
 ## Licence
 
 All material published on edi3.org including all parts of this specification are the intellectual property of the UN as per the [UN/CEFACT IPR Policy](https://www.unece.org/fileadmin/DAM/cefact/cf_plenary/plenary12/ECE_TRADE_C_CEFACT_2010_20_Rev2E_UpdatedIPRpolicy.pdf).
@@ -54,14 +25,69 @@ This document is governed by the [2/COSS](http://rfc.unprotocols.org/spec:2/COSS
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" 
 in this document are to be interpreted as described in RFC 2119.
 
-# Domain Model Interchange
+# Introduction
 
-Metamodel, JSON schema & sample instance goes here
+This specification provides a standard JSON structure/schema for the representation of semantic library content and API models. This is used to
 
-# Resource Model Interchange
+* import library content into any conformant modelling tool, and to
+* interchange API models between conformant modelling tools.
 
-Metamodel, JSON schema & sample instance goes here
- 
-# CodeList Interchange
+![use case](use-case.png)
 
-Metamodel, JSON schema & sample instance goes here
+This specification will have achieved its purpose when at least two different modelling tools (UML based or otherwise) can successfully interchange any of the three model types.
+
+# Metamodel Overview
+
+A DSL (domain specific language) approach is preferred here because it will be simpler and more stable than XMI (interchange standard for UML tools) and will allow non-UML based tools to participate equally in the market.
+
+The interchange specification is broken into three parts, each with a dedicated metamodel and each representing models that can be interchanged independently.
+
+* The domain model is essentially the "towm plan" for all UN/CEFACT API resources. 
+* The resource model details the state lifecycle and information model of a specific API resource.
+* the CodeList model represents code list schemes and the flat or hierarchical set of code values.
+
+![metamodel](Metamodel.png)
+
+
+# Town Plan Model Specification
+
+## Logical Model
+
+![town plan](TownPlanMetaModel.png)
+
+## JSON Schema
+
+[town plan schema](TownPlanSchema.json)
+
+## Sample
+
+coming soon
+
+# Domain Model Interchange Specification
+
+## Logical Model
+
+![domain model](DomainMetaModel.png)
+
+## JSON Schema
+
+[town plan schema](DomainSchema.json)
+
+## Sample
+
+coming soon
+
+# CodeList Interchange Specification
+
+## Logical Model
+
+![codes model](CodesMetaModel.png)
+
+## JSON Schema
+
+[codes schema](CodesSchema.json)
+
+## Sample
+
+coming soon
+
