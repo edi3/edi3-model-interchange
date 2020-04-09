@@ -71,7 +71,7 @@ coming soon
 
 ## JSON Schema
 
-[town plan schema](domain-schema.json)
+[domain schema](domain-schema.json)
 
 ## Sample
 
