@@ -29,7 +29,7 @@
       },
       "statusCode": {
         "type": "string",
-        "enum": ["typeOf", "contains", "references"],
+        "enum": ["active", "proposed", "deleted", "deprecated"],
         "description": "The general property."
       }
     },
@@ -107,11 +107,17 @@
         "type": {
           "type": "string",
           "enum": ["typeOf", "contains", "references"],
-          "description": "typeOf - implementation, contains - composition, references - association, ? - aggregation"
+          "description": "typeOf - ?, contains - composition, references - aggregation, ? - association"
+        },
+        "minCardinality": {
+          "type": "integer"
+        },
+        "maxCardinality": {
+          "type": "integer"
         },
         "target": {
           "type": "object",
-          "required": ["name", "context"],
+          "required": ["name"],
           "properties": {
             "name" : {"$ref": "#/definitions/general/name"},
             "context" : {
