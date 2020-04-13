@@ -107,7 +107,7 @@
         "type": {
           "type": "string",
           "enum": ["typeOf", "contains", "references"],
-          "description": "typeOf - ?, contains - composition, references - aggregation, ? - association"
+          "description": "typeOf - generalisation, contains - composition, references - aggregation"
         },
         "minCardinality": {
           "type": "integer"
