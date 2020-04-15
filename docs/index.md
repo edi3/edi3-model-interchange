@@ -42,9 +42,9 @@ A DSL (domain specific language) approach is preferred here because it will be s
 
 The interchange specification is broken into three parts, each with a dedicated metamodel and each representing models that can be interchanged independently.
 
-* The domain model is essentially the "towm plan" for all UN/CEFACT API resources. 
-* The resource model details the state lifecycle and information model of a specific API resource.
-* the CodeList model represents code list schemes and the flat or hierarchical set of code values.
+* The  town plan model provides the top level organising framework for all UN/CEFACT API resources. There will typically be just one town plan file version current at any givent time.
+* The resource model details the state lifecycle and information model of a specific API resource.  There will be typically be one file per domain or subdomain.
+* the CodeList model represents code list schemes and the flat or hierarchical set of code values.  There will typically be one file per code list.
 
 ![metamodel](overview-metamodel.png)
 
@@ -54,6 +54,8 @@ The interchange specification is broken into three parts, each with a dedicated 
 ## Logical Model
 
 ![town plan](townplan-metamodel.png)
+
+to-do : define each entity.
 
 ## JSON Schema
 
@@ -69,6 +71,8 @@ coming soon
 
 ![domain model](domain-metamodel.png)
 
+to-do : define each entity.
+
 ## JSON Schema
 
 [domain schema](domain-schema.json)
@@ -82,6 +86,8 @@ coming soon
 ## Logical Model
 
 ![codes model](codes-metamodel.png)
+
+to-do : define each entity.
 
 ## JSON Schema
 
