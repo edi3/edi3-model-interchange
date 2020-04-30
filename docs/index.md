@@ -632,7 +632,20 @@ A State chart is constrained to include only
 
 ![codes model](codes-metamodel.png)
 
-The code list model defines all the allowed values and additional properties of a single standard code list (eg UNECE Rec20 Units of measure)
+The code list model defines all the allowed values and additional properties of a single standard code list (eg UNECE Rec20 Units of measure). It is a flxible model that is designed to accomodate various additonal properties of different codelists.  For example
+
+* UNLOCODES have additional properties like "country", "sub-division", "geolocation", "function"
+* Units of Measure have additional properties like "conversionFactor", "category", "symbol"
+
+A code list is constrained to include:
+
+* A scheme (eg "unece.un.org/rec20") with name, description, version, levels (for hierarchical codes) and status.
+* One codelist scheme contains one or more codes (eg "KG") with name, description, level and status (eg proposed, active, deprecated)
+* One code list scheme also contains zero or more additonal property names (eg "Symbol") 
+* Each code contains zero or more additional property values (eg "m/s2") one for each property name defined by the scheme.
+* each code may reference a parent - this is unly applicable for hierarchical code lists like such as ISIC.
+
+This simple but flexible model supports the publishing and maintainence of any flat or hierarchical code list with any num,ber of additional properties per code.
 
 ## JSON Schema
 
